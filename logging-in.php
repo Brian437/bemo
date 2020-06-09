@@ -1,9 +1,16 @@
+<?php include 'master.php' ?>
 <html>
 <head>
+	<!--
+		Created by Brian Chaves
+		Created on June 07, 2020
+		Updated on June 08, 2020
+	-->
 	<?php
+
 		try
 		{
-			include_once 'master.php';
+			// include_once 'master.php';
 			// $login_succeeded=true;
 			$conn = new mysqli(DB_SERVER_NAME, DB_USER, DB_PASSWORD, DB_NAME);
 			// Check connection
@@ -49,10 +56,10 @@
 
 			// setcookie('user',$_POST['username'],time()+SECONDS_IN_DAY*30,'/');
 			// setcookie('user-token',$token,time()+SECONDS_IN_DAY*30,'/');
-			session_start();
+			// session_start();
 			// store session data
 			$_SESSION['user'] =$_POST['username'];
-			$SESSION['user-token']=$token;
+			$_SESSION['user_token']=$token;
 
 			$sql = 
 				"UPDATE user ".

@@ -1,26 +1,20 @@
+<?php include 'master.php' ?>
 <html>
 
 <head>
     <!--
 		Created by Brian Chaves
 		Created on June 06, 2020
-		Updated on June 06, 2020
+		Updated on June 07, 2020
 		Coppied from http://cdainterview.com/
 	-->
 	<?php
-		include_once('master.php');
-		include 'master.php';
-    	$login_user=login_token();
     	if(!can_view_page('index',$login_user))
     	{
     		header('location:login.php');
     		die();
     	}
     	$page_name='contact-us';
-		// $servername = "localhost";
-		// $username = "root";
-		// $password = "";
-		// $dbname = "phpmyadmin";
 
 		// Create connection
 		$conn = new mysqli(DB_SERVER_NAME, DB_USER, DB_PASSWORD, DB_NAME);

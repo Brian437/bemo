@@ -1,5 +1,12 @@
 <html>
 <head>
+	<!--
+		Created by Brian Chaves
+		Created on June 07, 2020
+		Updated on June 07, 2020
+	-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </head>
 <body>
 	<form 

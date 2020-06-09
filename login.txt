@@ -1,0 +1,7 @@
+user: admin
+password: tMTil3Kes9
+->has edit rights
+
+user: user
+password: NePA1YPKnZ
+->dosn't have edit rights

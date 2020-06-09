@@ -1,7 +1,7 @@
 /*
 	Created by Brian Chaves
 	Created on June 06, 2020
-	Updated on June 07, 2020
+	Updated on June 09, 2020
 */
 :root
 {
@@ -19,22 +19,23 @@ element, p
 	font-size:16px;
 }
 #index-page-header {
-	background-image: url(assets/cda-interview-guide.jpg);
+	/*background-image: url(assets/cda-interview-guide.jpg);*/
 	width: 100%;
-	height: 500px;
+	height: 1000px;
 	background-size: cover;
 }
 #index-page-header h1 {
 	position: absolute;
-	top: 50%;
+	top: 60%;
 	left: 50%;
 	-webkit-transform: translate(-50%,-50%);
 	-ms-transform: translate(-50%,-50%);
-	transform: translate(-50%,-50%);
+	 transform: translate(-50%,-50%); 
 	color: #ffffff;
 	letter-spacing: 10px;
 	width: 645px;
 	font-weight: normal;
+	text-align: center;
 }
 #nav {
 	position: fixed;
@@ -55,7 +56,7 @@ element, p
 	font-family: 'arial';
 	margin:50px;
 }
-#nav img
+#nav-img
 {
 	height: 100px;
 }
@@ -94,7 +95,7 @@ h2 {
 {
 	text-align: center;
 }
-input[type='text']
+input[type='text'], textarea
 {
 	display: block;
 	width: 85%;
@@ -103,9 +104,16 @@ input[type='text']
 	color: #333333;
 	background-color: #cccccc;
 	border: 0px;
-	height: 30px;
 	margin-top: 15px;
 	margin-bottom: 30px;
+}
+input[type='text']
+{
+	height: 30px;
+}
+textarea
+{
+	height: 90px;
 }
 #edit-page-form
 {
@@ -119,4 +127,81 @@ input[type='text']
 	height: 50px;
 	font-size:30px;
 	margin-top: 20px;
+}
+#nav-bar-hambuger-icon
+{
+	display:none;
+}
+@media only screen and (max-width: 1300px) 
+{
+	#index-page-header {
+		height: 500px;
+	}
+	#index-page-header h1 
+	{
+		top: 30%;
+	}
+}
+@media only screen and (max-width: 1000px) 
+{
+	 #nav-links a
+	 {
+	 	margin:35px;
+	 }
+	 #nav-links
+	 {
+	 	left: 250px;
+	 }
+}
+@media only screen and (max-width: 800px) 
+{
+	#nav-links {
+		left: 180px;
+	}
+	#nav-links a {
+		margin: 20px;
+	}
+	#index-page-header h1 {
+		font-size: 40px;
+		/* width: 600px; */
+		width: 100%;
+		text-align: center;
+	}
+}
+@media only screen and (max-width: 600px) 
+{
+	#nav-links:not(.active)
+	{
+		display:none;
+	}
+	#nav-links {
+		position: absolute;
+		right: 20px;
+		width: 210px;
+		left: unset;
+		top: 100px;
+		background-color: #ffffffc0;
+		height: auto;
+	}
+	#nav-links.active a {
+		display: block;
+		margin: 5px;
+		height: 40px;
+		border-bottom: 1px black solid;
+		line-height: 40px;
+		text-decoration: none;
+		text-align: center;
+		font-size: 30px;
+	}
+	#nav-links.active a:last-child
+	{
+		border-bottom: 0px transparent none;
+	}
+	#nav-bar-hambuger-icon {
+		display: block;
+		position: absolute;
+		right: 60px;
+		top: 10px;
+		width: 80px;
+	}
 }
