@@ -21,4 +21,4 @@ User Login:
 	password: NePA1YPKnZ
 		->dosn't have edit rights
 
-This website uses MySQL database stored inside website. I have exported the data to a json file incase you wish to review it.
+This website uses the MySQL database stored inside the website. I have exported the data to a JSON file in GitHub in case you wish to review it. 
