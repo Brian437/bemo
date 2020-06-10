@@ -26,7 +26,7 @@ element, p
 }
 #index-page-header h1 {
 	position: absolute;
-	top: 60%;
+	top: 600px;
 	left: 50%;
 	-webkit-transform: translate(-50%,-50%);
 	-ms-transform: translate(-50%,-50%);
@@ -127,6 +127,9 @@ textarea
 	height: 50px;
 	font-size:30px;
 	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
 #nav-bar-hambuger-icon
 {
@@ -135,9 +138,6 @@ textarea
 #login-form
 {
 	width: 300px;
-	/*margin-left:auto;*/
-	/*margin-right:auto;*/
-	/*margin-top:300px;*/
 	margin-top: 50vh;
 	margin-left: 50%;
 	border: 1px solid black;
@@ -153,7 +153,6 @@ textarea
 #login-form input
 {
 	width: 80%;
-	/*text-align: center;*/
 	margin-left: auto;
 	margin-right: auto;
 	display:block;
@@ -171,7 +170,7 @@ textarea
 	}
 	#index-page-header h1 
 	{
-		top: 30%;
+		top: 300px;
 	}
 }
 @media only screen and (max-width: 1000px) 
@@ -195,7 +194,6 @@ textarea
 	}
 	#index-page-header h1 {
 		font-size: 40px;
-		/* width: 600px; */
 		width: 100%;
 		text-align: center;
 	}
