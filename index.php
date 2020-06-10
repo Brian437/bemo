@@ -7,7 +7,6 @@
 		Created on June 06, 2020
 		Updated on June 08, 2020
 		Coppied from http://cdainterview.com/
-		Time tooken 11.0 hours
 	-->
 	<?php
 		if(!can_view_page('index',$login_user))
@@ -41,15 +40,10 @@
 			$content=$row['Content'];
 			$page_title=$row['Title'];
 			$image_url=$row['image_url'];
-			// echo '<pre>';
-			// print_r($row);
-			// echo '</pre>';
 			$no_index=$row['no_index'];
 			$meta_title=$row['meta_title'];
 			$meta_description=$row['meta_description'];
 		  }
-		} else {
-		  echo "0 results";
 		}
 		$conn->close();
 	?>

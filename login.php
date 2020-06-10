@@ -14,6 +14,7 @@
 		action="logging-in.php"
 		method="post" 
 	>
+		<h1>Login</h1>
 		<input type="text" name="username" id="username" placeholder="username">
 		<br/>
 		<input type="password" name="password" id="password" placeholder="password">

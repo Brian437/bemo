@@ -38,12 +38,7 @@
 						$meta_title=$row['meta_title'];
 						$meta_description=$row['meta_description'];
 						$image_url=$row['image_url'];
-						// echo'<pre>';
-						// print_r($row);
-						// echo '</pre>';
 					}
-				} else {
-					// echo "0 results";
 				}
 				$conn->close();
 		?>
@@ -109,12 +104,6 @@
 
 				>
 			</h2>
-			<!-- <input 
-				type='text' 
-				value="<?=$no_index?>" 
-				id='no-index' 
-				name='no-index'
-			> -->
 			<h2>Meta Title</h2>
 			<input 
 				type='text' 
@@ -135,7 +124,6 @@
 				"
 			><?=$meta_description?></textarea>
 			
-			<!-- <h2>header Image</h2> -->
 			<h2>Content</h2>
 			<textarea id="mytextarea" name='mytextarea'><?=$content?></textarea>
 			<input type="hidden" id='page' name='page' value="<?=$_GET['page']?>">
