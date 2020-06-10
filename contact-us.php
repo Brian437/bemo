@@ -65,7 +65,11 @@
 
 	<?php echo $content ?>
 
-	<form id='contact-us-form'>
+	<form 
+		id='contact-us-form'
+		action="submitting-contact-form.php" 
+		method="post" 
+	>
 		Name:
 		<input 
 			type="text"

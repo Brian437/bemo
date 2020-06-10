@@ -6,10 +6,11 @@ Features included:
 	Login
 	Edit
 	Responive
+	email form 
 
 Features missing:
 	google anilitics
-	email form 
+	
 
 User Login:
 	user: admin
