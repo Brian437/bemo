@@ -9,7 +9,7 @@ Features included:
 	email form 
 
 Features missing:
-	google anilitics
+	google analytics
 	
 
 User Login:
